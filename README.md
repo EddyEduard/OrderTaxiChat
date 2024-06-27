@@ -79,15 +79,13 @@ erDiagram
         string thread_id
         date created_date
     }
-
     REQUEST {
         string id PK
-        string cutomer_id HK
+        string cutomer_id FK
         string message_id
         string run_id
         date created_date
     }
-
     ADDRESS {
         string country
         string state
@@ -97,8 +95,8 @@ erDiagram
         string postal_code
     }
 
-     USER ||--|| ADDRESS : "has address"
-     USER ||--o{ REQUEST : "has requests"
+    CUSTOMER ||--|| ADDRESS : "has address"
+    CUSTOMER ||--o{ REQUEST : "has requests"
 ```
 
 ## License
