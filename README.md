@@ -62,6 +62,8 @@ The chatbot can execute the next tasks:
 4. To ask about method of payment;
 5. Record the order in the system.
 
+![alt Conversation example](https://github.com/EddyEduard/OrderTaxiChat/blob/main/assets/img/conversation.png)
+
 ## Database
 
 The database used for data storage is [MongoDB](https://www.mongodb.com/).
