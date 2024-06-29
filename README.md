@@ -25,6 +25,54 @@ Below is a list of all the technologies used to develop the app. They are struct
 **Cloud**
    - [OpenAI Platform](https://platform.openai.com/docs/overview)
 
+## Environment variables
+
+Before running the application, is necessary to set the environment variables used by the application. For this, a file named **.env** must be created. This file will contain all environment variables.
+
+The environment variables that are used by the application are:
+
+```
+HOST = "0.0.0.0"
+```
+
+The **HOST** variable contains the IP address where the application is running.
+
+```
+PORT = 7000
+```
+
+The **PORT** variable contains the port where the application is running.
+
+```
+CHECK_STATUS_AFTER_SECONDS = 10
+```
+
+The **CHECK_STATUS_AFTER_SECONDS** variable is the time after which it need to check again if a message sent to the chatbot has been completed or is still in progress.
+
+```
+DATABASE_NAME = "MeridianTaxiChat"
+```
+
+The **DATABASE_NAME** variable is the name of the collection in the database where the tables are stored.
+
+```
+DATABASE_URL = "<<your connection string>>"
+```
+
+The **DATABASE_URL** variable is the MongoDB database connection string.
+
+```
+OPENAI_API_KEY = "<<your API key>>"
+```
+
+The **OPENAI_API_KEY** variable is the key API service of the OpenAI platform.
+
+```
+OPENAI_ASSISTANT = "<<your assistant key>>"
+```
+
+The **OPENAI_ASSISTANT** variable is the key to the assistant built on the OpenAI platform.
+
 ## Run & Build commands
 
 The application is developed using the Flask framework.
